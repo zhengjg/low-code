@@ -54,6 +54,7 @@
           </span>
         </tiny-form-item>
         <mu-header></mu-header>
+        <el-input id="12"></el-input>
       </tiny-form>
     </div>
     <div
@@ -381,6 +382,7 @@ import {
   Search as TinySearch,
   ButtonGroup as TinyButtonGroup
 } from '@opentiny/vue'
+import { ElInput } from 'element-plus'
 import { Header as MuHeader } from 'mumu2-ui'
 import { iconPanelMini, iconPlus } from '@opentiny/vue-icon'
 
