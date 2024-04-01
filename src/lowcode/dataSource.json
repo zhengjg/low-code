@@ -1,0 +1,7 @@
+{
+  "dataHandler": {
+    "type": "JSFunction",
+    "value": "function dataHanlder(res){\n return res;\n}"
+  },
+  "list": []
+}
