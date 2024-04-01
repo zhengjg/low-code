@@ -3,13 +3,15 @@
     <header>
       <span>页面导航头</span>
     </header>
-    <big-wheel>
-      <span>按钮文本222</span>
-    </big-wheel>
+    <big-wheel></big-wheel>
+    <big-wheel></big-wheel>
     <big-wheel></big-wheel>
     <big-wheel>
       <span>按钮文本222</span>
     </big-wheel>
+    <marquee>
+      <span>九宫格抽奖</span>
+    </marquee>
   </div>
 </template>
 
@@ -18,7 +20,7 @@ import * as vue from 'vue'
 import { defineProps, defineEmits } from 'vue'
 import { I18nInjectionKey } from 'vue-i18n'
 import { span } from 'undefined'
-import { Header, BigWheel } from 'ms-ui-lib'
+import { Header, BigWheel, Marquee } from 'ms-ui-lib'
 
 const props = defineProps({})
 const emit = defineEmits([])
