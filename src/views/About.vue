@@ -6,6 +6,10 @@
     <big-wheel>
       <span>按钮文本222</span>
     </big-wheel>
+    <big-wheel></big-wheel>
+    <big-wheel>
+      <span>按钮文本222</span>
+    </big-wheel>
   </div>
 </template>
 
