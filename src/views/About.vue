@@ -1,5 +1,8 @@
 <template>
   <div class="page-szjqh">
+    <ms-launch>
+      <span>底部引导</span>
+    </ms-launch>
     <big-wheel></big-wheel>
     <slot-machine>
       <span>老虎机抽奖</span>
@@ -7,15 +10,12 @@
     <nine-square class="ninesquare-pmxig">
       <span>卡牌抽奖</span>
     </nine-square>
+    <ms-header>
+      <span>页面导航头</span>
+    </ms-header>
     <score-task-list>
       <span>任务列表</span>
     </score-task-list>
-    <header>
-      <span>页面导航头</span>
-    </header>
-    <launch>
-      <span>底部引导</span>
-    </launch>
   </div>
 </template>
 
@@ -24,7 +24,7 @@ import * as vue from 'vue'
 import { defineProps, defineEmits } from 'vue'
 import { I18nInjectionKey } from 'vue-i18n'
 import { span } from 'undefined'
-import { Header, BigWheel, NineSquare, SlotMachine, Launch, ScoreTaskList } from 'ms-ui-lib'
+import { Header as MsHeader, BigWheel, NineSquare, SlotMachine, ScoreTaskList, Launch as MsLaunch } from 'ms-ui-lib'
 
 const props = defineProps({})
 const emit = defineEmits([])
