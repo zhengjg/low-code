@@ -14,6 +14,9 @@ import { createApp } from 'vue'
 import router from './router'
 import { createPinia } from 'pinia'
 import App from './App.vue'
+import 'vant/lib/index.css'
+import '@nutui/nutui-bingo/dist/style.css'
+import 'ms-ui-lib/lib/style.css'
 
 const pinia = createPinia()
 
