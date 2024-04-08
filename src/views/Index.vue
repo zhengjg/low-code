@@ -3,6 +3,7 @@
     <ms-header>
       <span>页面导航头</span>
     </ms-header>
+    <tiny-button text="活动规则" type="danger" class="tinybutton-swrgb" @click="redirectRules"></tiny-button>
     <big-wheel>
       <span>按钮文本222</span>
     </big-wheel>
@@ -20,6 +21,7 @@ import * as vue from 'vue'
 import { defineProps, defineEmits } from 'vue'
 import { I18nInjectionKey } from 'vue-i18n'
 import { span } from 'undefined'
+import { Button as TinyButton } from '@opentiny/vue'
 import { Header as MsHeader, BigWheel, ScoreTaskList, Launch as MsLaunch } from 'ms-ui-lib'
 
 const props = defineProps({})
@@ -30,9 +32,14 @@ const wrap = lowcodeWrap(props, { emit })
 
 const state = vue.reactive({})
 
+const redirectRules = wrap(function redirectRules(event) {
+  this.$router.push('/rule')
+})
+
 wrap({
   stores,
-  state
+  state,
+  redirectRules
 })
 </script>
 
@@ -40,5 +47,11 @@ wrap({
 .page-pusvi {
   padding-top: 100px;
   padding-bottom: 60px;
+}
+.tinybutton-swrgb {
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  z-index: 100;
 }
 </style>
