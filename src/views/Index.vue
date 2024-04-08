@@ -33,7 +33,7 @@ const wrap = lowcodeWrap(props, { emit })
 const state = vue.reactive({})
 
 const redirectRules = wrap(function redirectRules(event) {
-  this.$router.push('/rule')
+  this.router.push('/rule')
 })
 
 wrap({
@@ -47,6 +47,7 @@ wrap({
 .page-pusvi {
   padding-top: 100px;
   padding-bottom: 60px;
+  overflow: hidden;
 }
 .tinybutton-swrgb {
   position: fixed;
