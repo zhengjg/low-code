@@ -1,5 +1,8 @@
 <template>
   <div class="page-vvhvn">
+    <global-header title="民生证券">
+      <span>次级导航头</span>
+    </global-header>
     <p>
       活动期间，下载并安装
       <span>“财富汇APP”</span>
@@ -27,6 +30,7 @@ import * as vue from 'vue'
 import { defineProps, defineEmits } from 'vue'
 import { I18nInjectionKey } from 'vue-i18n'
 import { p, span } from 'undefined'
+import { GlobalHeader } from 'ms-ui-lib'
 
 const props = defineProps({})
 const emit = defineEmits([])
@@ -46,6 +50,7 @@ wrap({
 .page-vvhvn {
   color: #666666;
   margin: 0 10px;
+  margin-top: 30px;
 }
 .page-vvhvn p {
   margin: 20px 0;
