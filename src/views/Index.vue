@@ -7,12 +7,24 @@
     <big-wheel>
       <span>按钮文本222</span>
     </big-wheel>
+    <span class="text-gugwk">我的礼包</span>
     <score-task-list>
       <span>任务列表</span>
     </score-task-list>
+    <div class="div-fkgoy">
+      <span class="ex-container">客服电话：95376</span>
+    </div>
     <ms-launch>
       <span>底部引导</span>
     </ms-launch>
+    <div class="div-gnstn">
+      <span class="ex-container">免责声明：</span>
+    </div>
+    <div class="div-szlvv">
+      <span class="text-mukpu">
+        活动内容仅供参考，不构成实质性投资建议，据此操作风险自担。对此活动所引致的任何损失，民生证券不承担任何责任。投资有风险，入市需谨慎。
+      </span>
+    </div>
   </div>
 </template>
 
@@ -45,14 +57,56 @@ wrap({
 
 <style scoped>
 .page-pusvi {
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding-top: 290px;
+  padding-bottom: 70px;
   overflow: hidden;
+  background: url(https://mumu19.cn/imgs/2022818/all-bg.png) center top no-repeat;
+  background-size: 100%;
+  background-color: #c5001b;
 }
 .tinybutton-swrgb {
   position: fixed;
   top: 100px;
   right: 0px;
   z-index: 100;
+}
+.ex-container {
+  margin: 20px 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.text-mukpu {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.div-szlvv {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.div-fkgoy {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.div-gnstn {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.text-gugwk {
+  position: absolute;
+  color: #e70922;
+  font-size: 14px;
+  padding: 5px 10px;
+  font-weight: 500;
+  background-color: #ffecae;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  left: 0px;
+  top: 600px;
+  opacity: 1;
+  z-index: 10px;
 }
 </style>
