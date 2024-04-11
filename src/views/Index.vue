@@ -1,16 +1,12 @@
 <template>
   <div class="page-pusvi">
-    <ms-header>
-      <span>页面导航头</span>
-    </ms-header>
     <tiny-button text="活动规则" type="danger" class="tinybutton-swrgb" @click="redirectRules"></tiny-button>
     <big-wheel>
-      <span>按钮文本222</span>
+      <label text="大转盘抽奖"></label>
     </big-wheel>
-    <span class="text-gugwk">我的礼包</span>
-    <score-task-list>
-      <span>任务列表</span>
-    </score-task-list>
+    <score-task-list></score-task-list>
+    <etf-hot></etf-hot>
+    <span class="text-gugwk" @click="redirectMyAward">我的礼包</span>
     <div class="div-fkgoy">
       <span class="ex-container">客服电话：95376</span>
     </div>
@@ -20,6 +16,7 @@
     <div class="div-gnstn">
       <span class="ex-container">免责声明：</span>
     </div>
+    <ms-header title="理财节"></ms-header>
     <div class="div-szlvv">
       <span class="text-mukpu">
         活动内容仅供参考，不构成实质性投资建议，据此操作风险自担。对此活动所引致的任何损失，民生证券不承担任何责任。投资有风险，入市需谨慎。
@@ -34,7 +31,7 @@ import { defineProps, defineEmits } from 'vue'
 import { I18nInjectionKey } from 'vue-i18n'
 import { span } from 'undefined'
 import { Button as TinyButton } from '@opentiny/vue'
-import { Header as MsHeader, BigWheel, ScoreTaskList, Launch as MsLaunch } from 'ms-ui-lib'
+import { Header as MsHeader, BigWheel, ScoreTaskList, Launch as MsLaunch, EtfHot } from 'ms-ui-lib'
 
 const props = defineProps({})
 const emit = defineEmits([])
@@ -48,10 +45,15 @@ const redirectRules = wrap(function redirectRules(event) {
   this.router.push('/rule')
 })
 
+const redirectMyAward = wrap(function (event) {
+  this.router.push('/award')
+})
+
 wrap({
   stores,
   state,
-  redirectRules
+  redirectRules,
+  redirectMyAward
 })
 </script>
 
@@ -107,6 +109,6 @@ wrap({
   left: 0px;
   top: 600px;
   opacity: 1;
-  z-index: 10px;
+  z-index: 10;
 }
 </style>

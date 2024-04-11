@@ -6,6 +6,10 @@ const routes = [
     redirect: '/index'
   },
   {
+    path: '/award',
+    component: () => import('../views/MyAward.vue')
+  },
+  {
     path: '/index',
     component: () => import('../views/Index.vue')
   },
