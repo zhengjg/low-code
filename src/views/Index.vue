@@ -1,11 +1,8 @@
 <template>
   <div class="page-pusvi">
     <tiny-button text="活动规则" type="danger" class="tinybutton-swrgb" @click="redirectRules"></tiny-button>
-    <big-wheel>
-      <label text="大转盘抽奖"></label>
-    </big-wheel>
+    <big-wheel></big-wheel>
     <score-task-list></score-task-list>
-    <etf-hot></etf-hot>
     <span class="text-gugwk" @click="redirectMyAward">我的礼包</span>
     <div class="div-fkgoy">
       <span class="ex-container">客服电话：95376</span>
@@ -16,7 +13,15 @@
     <div class="div-gnstn">
       <span class="ex-container">免责声明：</span>
     </div>
-    <ms-header title="理财节"></ms-header>
+    <ms-header
+      title="理财节"
+      textColor="#fff"
+      shareTitle="818活动"
+      shareSubstract="分享活动享积分，积分抽大奖"
+      :isShare="true"
+      bgColor="#ffffff"
+    ></ms-header>
+    <etf-hot></etf-hot>
     <div class="div-szlvv">
       <span class="text-mukpu">
         活动内容仅供参考，不构成实质性投资建议，据此操作风险自担。对此活动所引致的任何损失，民生证券不承担任何责任。投资有风险，入市需谨慎。
