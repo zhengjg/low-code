@@ -1,9 +1,14 @@
 <template>
   <div class="page-pusvi">
     <tiny-button text="活动规则" type="danger" class="tinybutton-swrgb" @click="redirectRules"></tiny-button>
-    <big-wheel></big-wheel>
+    <tiny-button text="活动规则" type="danger" class="tinybutton-swrgb" @click="redirectRules"></tiny-button>
+    <big-wheel
+      src="http://front-visual-bt1.oss-cn-shanghai.aliyuncs.com/icon/e17e9002-e913-4a55-815a-717624003a0e23.png"
+    ></big-wheel>
     <score-task-list></score-task-list>
+    <etf-hot></etf-hot>
     <span class="text-gugwk" @click="redirectMyAward">我的礼包</span>
+    <etf-hot></etf-hot>
     <div class="div-fkgoy">
       <span class="ex-container">客服电话：95376</span>
     </div>
@@ -15,7 +20,7 @@
     </div>
     <ms-header
       title="理财节"
-      textColor="#fff"
+      textColor="#000000"
       shareTitle="818活动"
       shareSubstract="分享活动享积分，积分抽大奖"
       :isShare="true"
