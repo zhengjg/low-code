@@ -29,7 +29,7 @@
 import * as vue from 'vue'
 import { defineProps, defineEmits } from 'vue'
 import { I18nInjectionKey } from 'vue-i18n'
-import { p, span } from 'undefined'
+
 import { GlobalHeader } from 'ms-ui-lib'
 
 const props = defineProps({})

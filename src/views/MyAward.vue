@@ -11,7 +11,7 @@
 import * as vue from 'vue'
 import { defineProps, defineEmits } from 'vue'
 import { I18nInjectionKey } from 'vue-i18n'
-import { span } from 'undefined'
+
 import { GlobalHeader, CredentialAward } from 'ms-ui-lib'
 
 const props = defineProps({})

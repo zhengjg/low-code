@@ -27,7 +27,7 @@
     <etf-hot></etf-hot>
     <div class="div-szlvv">
       <span class="text-mukpu">
-        活动内容仅供参考，不构成实质性投资建议，据此操作风险自担。对此活动所引致的任何损失，不承担任何责任。投资有风险，入市需谨慎。
+        活动内容仅供参考，不构成实质性投资，据此操作风险自担。对此活动所引致的任何损失，不承担任何责任。投资有风险，入市需谨慎。
       </span>
     </div>
   </div>
@@ -37,7 +37,7 @@
 import * as vue from 'vue'
 import { defineProps, defineEmits } from 'vue'
 import { I18nInjectionKey } from 'vue-i18n'
-import { span } from 'undefined'
+
 import { Button as TinyButton } from '@opentiny/vue'
 import { Header as MsHeader, BigWheel, ScoreTaskList, Launch as MsLaunch, EtfHot } from 'ms-ui-lib'
 
